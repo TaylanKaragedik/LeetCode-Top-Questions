@@ -1,17 +1,7 @@
-/*fun StringChallenge(str : String) : String =
-    str.replace(Regex("(.) \\1*")){
-    String.format("%d%s",it.value.length, it.groupValues[1])
-
-}
-
-fun main() {
-    println(StringChallenge("aaaaabbbbbbbbbbcccccccddddd"))
-}
-
- */
-
-
 fun threeSum(nums: IntArray): List<List<Int>> {
+    //You migth need configure your run configuration if try to run in intellij but 
+    //it definetly work at leetcode
+    
     var set = HashSet<List<Int>>()
     if(nums.size <= 2) {
         return set.toList()
@@ -38,6 +28,3 @@ fun threeSum(nums: IntArray): List<List<Int>> {
     return set.toList()
 }
 
-fun main(){
-    print(threeSum(intArrayOf(readLine()!!.toInt())))
-}
